@@ -4,7 +4,9 @@
 
 ## Installation
 
-`npm i -g see-ess-vee-to-json`
+```
+npm i -g see-ess-vee-to-json
+```
 
 ## Usage
 
