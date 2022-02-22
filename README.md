@@ -8,7 +8,7 @@
 
 ## Usage
 
-`c2j [options] [command]`
+`Usage: c2j [command] [options]`
 
 ```
 CLI to parse CSV files and output JSON
@@ -18,6 +18,6 @@ Options:
   -h, --help                      display help for command
 
 Commands:
-  parse [options] <path-to-file>  Parse a file
+  parse <path-to-file> [options]  Parse a file
   help [command]                  display help for command
 ```

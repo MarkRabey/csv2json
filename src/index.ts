@@ -17,6 +17,7 @@ program
   .command('parse')
   .description('Parse a file')
   .argument('<path-to-file>', 'path to the file to parse')
+  .usage('<path-to-file> [options]')
   .option(
     '-o, --output <output-path>',
     'path to output results to',
