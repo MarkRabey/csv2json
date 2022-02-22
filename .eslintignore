@@ -1,0 +1,8 @@
+__mocks__
+.husky
+coverage
+node_modules
+build
+dist
+gh-pages
+package-lock.json
