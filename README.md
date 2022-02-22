@@ -1,10 +1,16 @@
 # csv2json
 
-Convert a `.csv` file to a `.json` file.
+> Convert a `.csv` file to a `.json` file.
 
-```bash
-Usage: csv2json [options] [command]
+## Installation
 
+`npm i -g csv2json`
+
+## Usage
+
+`csv2json [options] [command]`
+
+```
 CLI to parse CSV files and output JSON
 
 Options:
