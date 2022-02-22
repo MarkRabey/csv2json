@@ -12,6 +12,7 @@ function parse(inputPath, options) {
 
   const rows: unknown[] = [];
   try {
+    log(`Parsing ${inputPath}`);
     fs.createReadStream(path.resolve(inputPath))
       .pipe(csv.parse({headers: true}))
       .on('error', err => log(err, LOG_LEVEL.Error))

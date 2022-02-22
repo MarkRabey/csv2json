@@ -6,9 +6,12 @@ import parse from './commands/parse';
 import log, {LOG_LEVEL} from './utils/log';
 
 program
-  .name('see-ess-vee\nto-json')
+  .name('c2j')
+  .usage('[command] [options]')
   .description('CLI to parse CSV files and output JSON')
-  .version('0.1.0');
+  .version('0.1.0')
+  .showHelpAfterError()
+  .showSuggestionAfterError();
 
 program
   .command('parse')
@@ -22,7 +25,7 @@ program
   .action(parse);
 
 figlet(
-  program.name(),
+  'see-ess-vee\nto-json',
   {
     font: 'Standard',
     horizontalLayout: 'default',
@@ -37,7 +40,6 @@ figlet(
       return;
     }
     log(data);
+    program.parse(process.argv);
   },
 );
-
-program.parse(process.argv);
