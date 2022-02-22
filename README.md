@@ -23,3 +23,15 @@ Commands:
   parse <path-to-file> [options]  Parse a file
   help [command]                  display help for command
 ```
+
+### Examples
+
+```shell
+# Parse csv file and save as `output.json`
+c2j /path-to/my-file.csv
+```
+
+```shell
+# Specify saved file destination
+c2j /path-to/my-file.csv --output /path-to/my-file.json
+```
