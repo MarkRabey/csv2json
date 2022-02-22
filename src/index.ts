@@ -9,7 +9,7 @@ program
   .name('c2j')
   .usage('[command] [options]')
   .description('CLI to parse CSV files and output JSON')
-  .version('0.1.0')
+  .version('0.1.4')
   .showHelpAfterError()
   .showSuggestionAfterError();
 
