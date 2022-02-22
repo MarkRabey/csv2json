@@ -15,6 +15,9 @@
     "json",
     "cli"
   ],
+  "files": [
+    "dist/**/*.js"
+  ],
   "bin": {
     "c2j": "./dist/index.js"
   },
