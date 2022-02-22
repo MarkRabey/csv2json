@@ -1,14 +1,14 @@
-# csv2json
+# see-ess-vee-to-json
 
 > Convert a `.csv` file to a `.json` file.
 
 ## Installation
 
-`npm i -g csv2json`
+`npm i -g see-ess-vee-to-json`
 
 ## Usage
 
-`csv2json [options] [command]`
+`c2j [options] [command]`
 
 ```
 CLI to parse CSV files and output JSON

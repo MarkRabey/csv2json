@@ -1,8 +1,8 @@
 {
-  "name": "csv2json",
+  "name": "see-ess-vee-to-json",
   "version": "0.1.0",
   "bin": {
-    "csv2json": "./dist/index.js"
+    "c2j": "./dist/index.js"
   },
   "main": "dist/index.js",
   "license": "MIT",

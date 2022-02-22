@@ -9,7 +9,7 @@ function write(rows: unknown[], outputPath: string) {
     if (err) {
       log(err, LOG_LEVEL.Error);
     }
-    log('Done. Thanks for using csv2json!', LOG_LEVEL.Success);
+    log('Done. Thanks for using see-ess-vee-to-json!', LOG_LEVEL.Success);
   });
 }
 
