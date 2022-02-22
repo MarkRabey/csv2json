@@ -1,6 +1,11 @@
 {
   "name": "see-ess-vee-to-json",
   "version": "0.1.0",
+  "keywords": [
+    "csv",
+    "json",
+    "cli"
+  ],
   "bin": {
     "c2j": "./dist/index.js"
   },
