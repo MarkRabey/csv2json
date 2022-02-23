@@ -2,7 +2,10 @@ import * as fs from 'fs';
 
 import log, {LOG_LEVEL} from '../utils/log';
 
-function write(rows: unknown[], outputPath: string) {
+function write(
+  rows: unknown[] | {[x: string]: unknown[]},
+  outputPath: string,
+): void {
   log(`Writing ${outputPath}`);
 
   fs.writeFile(outputPath, JSON.stringify(rows), err => {

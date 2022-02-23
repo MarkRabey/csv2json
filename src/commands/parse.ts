@@ -10,6 +10,8 @@ function parse(inputPath, options) {
     ? path.resolve(options.output)
     : path.resolve(__dirname, 'output.json');
 
+  const writeObject = options.object;
+
   const rows: unknown[] = [];
   try {
     log(`Parsing ${inputPath}`);
@@ -21,7 +23,15 @@ function parse(inputPath, options) {
       })
       .on('end', (rowCount: number) => {
         log(`Parsed ${rowCount} row(s)`, LOG_LEVEL.Success);
-        write(rows, outputPath);
+        if (writeObject) {
+          const key = typeof writeObject === 'string' ? writeObject : 'data';
+          const output = {
+            [key]: rows,
+          };
+          write(output, outputPath);
+        } else {
+          write(rows, outputPath);
+        }
       });
   } catch (err) {
     log(err, LOG_LEVEL.Error);

@@ -23,6 +23,10 @@ program
     'path to output results to',
     'output.json',
   )
+  .option(
+    '--object [key]',
+    'Group data as an object with optional key (default key: `data`)',
+  )
   .action(parse);
 
 figlet(
